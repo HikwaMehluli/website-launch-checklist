@@ -1,0 +1,148 @@
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+header, footer {
+    color: white;
+    background-color: #00a4cb;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 700px;
+    padding: 30px 0;
+    text-align: center;
+}
+header a, footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+.checklist {
+    margin: 0 auto;
+    max-width: 700px;
+    background: #fff;
+}
+
+.checklist section {
+    background: #222;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 20px 0;
+    font-weight: 700;
+}
+
+ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+ul li {
+    position: relative;
+}
+
+/* Text / Statement */
+ul label {
+    color: #2a2a2a; /* Text Color */
+    padding: 10px 10px 15px 65px;
+    display: block;
+    position: relative;
+}
+
+/* Text / Statement */
+ul label a {
+    color: #00a4cb;
+    text-decoration: underline;
+}
+
+/* Removes defaulf check box */
+ul input {
+    opacity: 0;
+}
+
+/* Position text and check box */
+ul input, ul li.focus:before {
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+/* Ensure check box inner circle is empty */
+ul li.checked .check:before,ul li.focus:before,ul span.input:before {
+    content: "";
+}
+
+/* Inside Checkbox before selection */
+ul span,ul span:after,ul span:before {
+    display: block;
+    position: absolute;
+    background: #fff;
+    border-radius: 50%
+}
+
+/* Outter circle of Checkbox before selection */
+ul span.input {
+    background: #d12222;
+    width: 26px;
+    height: 26px;
+    left: 24px;
+    top: 10px
+}
+ul span.input:before {
+    width: 22px;
+    height: 22px;
+    top: 2px;
+    left: 2px;
+}
+
+/* Text when checkbox is selected */
+ul li.checked {
+    background: #f1f1f1;
+}
+ul li.checked label {
+    text-decoration: line-through;
+}
+
+/* Crossed out text when checkbox is selected */
+ul li.checked,ul li.checked a,ul li.checked a:hover {
+    color: #b7b7b7;
+}
+
+/* Check backgrounf color when selected */
+ul li.checked span.input {
+    background: #00b700;
+}
+ul li.checked span.input:before {
+    display: none; /* set to none to insure color displays properly */
+}
+
+/* left side of Tick when checkbox is selected */
+ul li.checked .check {
+    width: 8px;
+    height: 4px;
+    border-radius: 1px;
+    z-index: 2;
+    top: 13px;
+    left: 5px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/* Right side of Tick when checkbox is selected */
+ul li.checked .check:before {
+    width: 4px;
+    height: 15px;
+    border-radius: 1px;
+    z-index: 2;
+    left: 5px;
+    top: -11px;
+}
