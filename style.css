@@ -58,7 +58,6 @@ ul label {
     position: relative;
 }
 
-/* Text / Statement */
 ul label a {
     color: #00a4cb;
     text-decoration: underline;
@@ -66,7 +65,9 @@ ul label a {
 
 /* Removes defaulf check box */
 ul input {
+    position: absolute;
     opacity: 0;
+    cursor: pointer;
 }
 
 /* Position text and check box */
