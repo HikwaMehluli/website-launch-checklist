@@ -3,6 +3,7 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
+
 body {
     margin: 0 auto;
     background-color: #f4f4f4;
@@ -20,9 +21,10 @@ header, footer {
     padding: 30px 0;
     text-align: center;
 }
+
 header a, footer a {
     color: white;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .checklist {
